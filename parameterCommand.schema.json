@@ -1,0 +1,15 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Parameter Command Schema",
+    "description": "A parameter write command: the correlation Uuid plus the requested Value (the DMP injects the Uuid)",
+    "type": "object",
+    "properties": {
+        "Uuid": {
+            "type": "string"
+        },
+        "Value": {
+            "type": "number"
+        }
+    },
+    "required": ["Uuid", "Value"]
+}
